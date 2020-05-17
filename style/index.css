@@ -6,7 +6,7 @@ header {
     color: purple;
   }
   a {
-    padding: 5px;
+    padding: .5rem;
     color: purple;
   }
   
@@ -15,16 +15,16 @@ header {
   }
   .lead {
     flex-direction: row;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
   }
   
   p {
-    padding: 75px;
+    padding: 7.5rem;
   }
   
   img {
-    padding: 10px;
+    padding: 1rem;
   }
   
   section {
@@ -34,15 +34,26 @@ header {
   footer {
     background: lightgrey;
     text-align: center;
-    padding: 5px;
+    padding: .5rem;
   }
   
   img:hover {
-    box-shadow: 5px 5px;
+    box-shadow: .5rem .5rem;
     background: purple;
   }
   
   a:hover {
     background: grey;
     color: black;
+  }
+  @media(max-width: 800px) {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media(max-width: 500px) {
+    section {
+      align-content: center;
+    }
   }
